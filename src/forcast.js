@@ -85,25 +85,25 @@ function Forcast(props) {
                 />
               </li>
               <li>
-                Temperature{" "}
+                Temperatura{" "}
                 <span className="temp">
                   {Math.round(weather.main.temp)}°c ({weather.weather[0].main})
                 </span>
               </li>
               <li>
-                Humidity{" "}
+                Umidade{" "}
                 <span className="temp">
                   {Math.round(weather.main.humidity)}%
                 </span>
               </li>
               <li>
-                Visibility{" "}
+                Visibilidade{" "}
                 <span className="temp">
                   {Math.round(weather.visibility)} mi
                 </span>
               </li>
               <li>
-                Wind Speed{" "}
+                Velocidade do vento{" "}
                 <span className="temp">
                   {Math.round(weather.wind.speed)} Km/h
                 </span>

@@ -6,27 +6,27 @@ import loader from "./images/WeatherIcons.gif";
 import ReactAnimatedWeather from "react-animated-weather";
 const dateBuilder = (d) => {
   let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
   ];
   let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
+    "Doming",
+    "Segunda",
+    "Terça",
+    "Quarta",
+    "Quinta",
+    "Sexta",
+    "Sábado",
   ];
 
   let day = days[d.getDay()];
@@ -121,34 +121,34 @@ class Weather extends React.Component {
     });
     switch (this.state.main) {
       case "Haze":
-        this.setState({ icon: "CLEAR_DAY" });
+        this.setState({ icon: "Céu Limpo" });
         break;
       case "Clouds":
-        this.setState({ icon: "CLOUDY" });
+        this.setState({ icon: "Nublado" });
         break;
       case "Rain":
-        this.setState({ icon: "RAIN" });
+        this.setState({ icon: "Chuvoso" });
         break;
       case "Snow":
-        this.setState({ icon: "SNOW" });
+        this.setState({ icon: "Nevando" });
         break;
       case "Dust":
-        this.setState({ icon: "WIND" });
+        this.setState({ icon: "Ventando" });
         break;
       case "Drizzle":
-        this.setState({ icon: "SLEET" });
+        this.setState({ icon: "Chuva de granizo" });
         break;
       case "Fog":
-        this.setState({ icon: "FOG" });
+        this.setState({ icon: "Neblinoso" });
         break;
       case "Smoke":
-        this.setState({ icon: "FOG" });
+        this.setState({ icon: "Neblinoso" });
         break;
       case "Tornado":
-        this.setState({ icon: "WIND" });
+        this.setState({ icon: "Ventoso" });
         break;
       default:
-        this.setState({ icon: "CLEAR_DAY" });
+        this.setState({ icon: "Céu limpo" });
     }
   };
 
